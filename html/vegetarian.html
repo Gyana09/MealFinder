@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meal Finder</title>
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <!-- Navbar Section -->
+    <nav class="navbar" data-bs-theme="dark">
+        <div class="container-fluid" id="navbarContainer">
+            <a class="navbar-brand text-white" href="#"><i class="fa-solid fa-house"></i> MEAL FINDER</a>
+            <button id="navbarToggler" class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel" style="background-color: white;">
+
+                <div class="offcanvas-header">
+                    <button type="button" class="meal-close" data-bs-dismiss="offcanvas" aria-label="Close">
+                        <i class="fa-regular fa-circle-xmark"></i>
+                    </button>
+                </div>
+
+                <div class="offcanvas-body">
+                    <ul class="category-list">
+                        <li><a href="#">Beef</a></li>
+                        <li><a href="#">Chicken</a></li>
+                        <li><a href="#">Dessert</a></li>
+                        <li><a href="#">Lamb</a></li>
+                        <li><a href="#">Miscellaneous</a></li>
+                        <li><a href="#">Pasta</a></li>
+                        <li><a href="#">Pork</a></li>
+                        <li><a href="#">Seafood</a></li>
+                        <li><a href="#">Side</a></li>
+                        <li><a href="#">Starter</a></li>
+                        <li><a href="#">Vegan</a></li>
+                        <li><a href="#">Vegetarian</a></li>
+                        <li><a href="#">Breakfast</a></li>
+                        <li><a href="#">Goat</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Banner Section -->
+    <header class="banner">
+        <form class="search-container" action="#" method="GET">
+            <input type="text" class="search-input" placeholder="Search recipes here..." aria-label="Search recipes">
+            <button type="submit" class="search-btn" aria-label="Submit search">
+                <i class="fa-solid fa-magnifying-glass" style="color: #6c757d;"></i>
+            </button>
+        </form>
+        <h2>What are your favorite cuisines?</h2>
+        <p>PERSONALIZE YOUR EXPERIENCE</p>
+    </header>
+
+    <div class="description-card">
+        <h3 class="description-title">Vegetarian</h3>
+        <p class="description-text">
+            Vegetarianism is the practice of abstaining from the consumption of meat (red meat, poultry, seafood, and
+            the flesh of any other animal), and may also include abstention from by-products of animal slaughter.
+            Vegetarianism may be adopted for various reasons. Many people object to eating meat out of respect for
+            sentient life. Such ethical motivations have been codified under various religious beliefs, as well as
+            animal rights advocacy. Other motivations for vegetarianism are health-related, political, environmental,
+            cultural, aesthetic, economic, or personal preference. There are variations of the diet as well: an
+            ovo-lacto vegetarian diet includes both eggs and dairy products, an ovo-vegetarian diet includes eggs but
+            not dairy products, and a lacto-vegetarian diet includes dairy products but not eggs. A vegan diet excludes
+            all animal products, including eggs and dairy. Some vegans also avoid other animal products such as beeswax,
+            leather or silk clothing, and goose-fat shoe polish.
+        </p>
+    </div>
+
+    <!-- Meals Section -->
+    <section class="categories-section">
+        <h3 class="categories-title">MEALS</h3>
+        <div class="title-underline"></div>
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-5 g-4">
+
+            <div class="col">
+                <a href="#" class="recipe-card">
+                    <img src="../assets/1.jpg" alt="Baingan Bharta">
+                    <div class="card-content">
+                        <p class="recipe-origin">India</p>
+                        <h4 class="recipe-title">Baingan Bharta</h4>
+                    </div>
+                </a>
+            </div>
+            <div class="col">
+                <a href="#" class="recipe-card">
+                    <img src="../assets/2.jpg" alt="Beetroot Soup (Borscht)">
+                    <div class="card-content">
+                        <p class="recipe-origin">Ukrainian</p>
+                        <h4 class="recipe-title">Beetroot Soup (Borscht)</h4>
+                    </div>
+                </a>
+            </div>
+            <div class="col">
+                <a href="#" class="recipe-card">
+                    <img src="../assets/3.jpg" alt="Cabbage Soup (Shchi)">
+                    <div class="card-content">
+                        <p class="recipe-origin">Russian</p>
+                        <h4 class="recipe-title">Cabbage Soup (Shchi)</h4>
+                    </div>
+                </a>
+            </div>
+            <div class="col">
+                <a href="#" class="recipe-card">
+                    <img src="../assets/4.jpg" alt="Chickpea Fajitas">
+                    <div class="card-content">
+                        <p class="recipe-origin">Mexican</p>
+                        <h4 class="recipe-title">Chickpea Fajitas</h4>
+                    </div>
+                </a>
+            </div>
+            <div class="col">
+                <a href="#" class="recipe-card">
+                    <img src="../assets/5.jpg" alt="Crispy Eggplant">
+                    <div class="card-content">
+                        <p class="recipe-origin">Filipino</p>
+                        <h4 class="recipe-title">Crispy Eggplant</h4>
+                    </div>
+                </a>
+            </div>
+            <div class="col">
+                <a href="#" class="recipe-card">
+                    <img src="../assets/6.jpg" alt="Dal fry">
+                    <div class="card-content">
+                        <p class="recipe-origin">India</p>
+                        <h4 class="recipe-title">Dal fry</h4>
+                    </div>
+                </a>
+            </div>
+            <div class="col">
+                <a href="#" class="recipe-card">
+                    <img src="../assets/7.jpg" alt="Egg Drop Soup">
+                    <div class="card-content">
+                        <p class="recipe-origin">Chinese</p>
+                        <h4 class="recipe-title">Egg Drop Soup</h4>
+                    </div>
+                </a>
+            </div>
+            <div class="col">
+                <a href="#" class="recipe-card">
+                    <img src="../assets/8.jpg" alt="Eggplant Adobo">
+                    <div class="card-content">
+                        <p class="recipe-origin">Filipino</p>
+                        <h4 class="recipe-title">Eggplant Adobo</h4>
+                    </div>
+                </a>
+            </div>
+            <div class="col">
+                <a href="#" class="recipe-card">
+                    <img src="../assets/9.jpg" alt="Flamiche">
+                    <div class="card-content">
+                        <p class="recipe-origin">France</p>
+                        <h4 class="recipe-title">Flamiche</h4>
+                    </div>
+                </a>
+            </div>
+            <div class="col">
+                <a href="#" class="recipe-card">
+                    <img src="../assets/10.jpg" alt="Ful Medames">
+                    <div class="card-content">
+                        <p class="recipe-origin">Egyptian</p>
+                        <h4 class="recipe-title">Ful Medames</h4>
+                    </div>
+                </a>
+            </div>
+            <div class="col">
+                <a href="#" class="recipe-card">
+                    <img src="../assets/11.jpg" alt="Gigantes Plaki">
+                    <div class="card-content">
+                        <p class="recipe-origin">Greek</p>
+                        <h4 class="recipe-title">Gigantes Plaki</h4>
+                    </div>
+                </a>
+            </div>
+            <div class="col">
+                <a href="#" class="recipe-card">
+                    <img src="../assets/12.jpg" alt="Grilled eggplant with coconut milk">
+                    <div class="card-content">
+                        <p class="recipe-origin">Filipino</p>
+                        <h4 class="recipe-title">Grilled eggplant with coconut milk</h4>
+                    </div>
+                </a>
+            </div>
+            <div class="col">
+                <a href="#" class="recipe-card">
+                    <img src="../assets/13.jpg" alt="Kafteji">
+                    <div class="card-content">
+                        <p class="recipe-origin">Tunisian</p>
+                        <h4 class="recipe-title">Kafteji</h4>
+                    </div>
+                </a>
+            </div>
+            <div class="col">
+                <a href="#" class="recipe-card">
+                    <img src="../assets/14.jpg" alt="Kidney Bean Curry">
+                    <div class="card-content">
+                        <p class="recipe-origin">India</p>
+                        <h4 class="recipe-title">Kidney Bean Curry</h4>
+                    </div>
+                </a>
+            </div>
+            <div class="col">
+                <a href="#" class="recipe-card">
+                    <img src="../assets/15.jpg" alt="Koshari">
+                    <div class="card-content">
+                        <p class="recipe-origin">Egyptian</p>
+                        <h4 class="recipe-title">Koshari</h4>
+                    </div>
+                </a>
+            </div>
+            <div class="col">
+                <a href="#" class="recipe-card">
+                    <img src="../assets/16.jpg" alt="Leblebi Soup">
+                    <div class="card-content">
+                        <p class="recipe-origin">Tunisian</p>
+                        <h4 class="recipe-title">Leblebi Soup</h4>
+                    </div>
+                </a>
+            </div>
+            <div class="col">
+                <a href="#" class="recipe-card">
+                    <img src="../assets/17.jpg" alt="Matar Paneer">
+                    <div class="card-content">
+                        <p class="recipe-origin">India</p>
+                        <h4 class="recipe-title">Matar Paneer</h4>
+                    </div>
+                </a>
+            </div>
+            <div class="col">
+                <a href="#" class="recipe-card">
+                    <img src="../assets/18.jpg" alt="Moroccan Carrot Soup">
+                    <div class="card-content">
+                        <p class="recipe-origin">Moroccan</p>
+                        <h4 class="recipe-title">Moroccan Carrot Soup</h4>
+                    </div>
+                </a>
+            </div>
+            <div class="col">
+                <a href="#" class="recipe-card">
+                    <img src="../assets/19.jpg" alt="Mushroom & Chestnut Rotolo">
+                    <div class="card-content">
+                        <p class="recipe-origin">British</p>
+                        <h4 class="recipe-title">Mushroom & Chestnut Rotolo</h4>
+                    </div>
+                </a>
+            </div>
+            <div class="col">
+                <a href="#" class="recipe-card">
+                    <img src="../assets/20.jpg" alt="Potato Salad (Olivier Salad)">
+                    <div class="card-content">
+                        <p class="recipe-origin">Russian</p>
+                        <h4 class="recipe-title">Potato Salad (Olivier Salad)</h4>
+                    </div>
+                </a>
+            </div>
+            <div class="col">
+                <a href="#" class="recipe-card">
+                    <img src="../assets/21.jpg" alt="Provençal Omelette Cake">
+                    <div class="card-content">
+                        <p class="recipe-origin">France</p>
+                        <h4 class="recipe-title">Provençal Omelette Cake</h4>
+                    </div>
+                </a>
+            </div>
+            <div class="col">
+                <a href="#" class="recipe-card">
+                    <img src="../assets/22.jpg" alt="Ratatouille">
+                    <div class="card-content">
+                        <p class="recipe-origin">France</p>
+                        <h4 class="recipe-title">Ratatouille</h4>
+                    </div>
+                </a>
+            </div>
+            <div class="col">
+                <a href="#" class="recipe-card">
+                    <img src="../assets/23.jpg" alt="Ribollita">
+                    <div class="card-content">
+                        <p class="recipe-origin">Italian</p>
+                        <h4 class="recipe-title">Ribollita</h4>
+                    </div>
+                </a>
+            </div>
+            <div class="col">
+                <a href="#" class="recipe-card">
+                    <img src="../assets/24.jpg" alt="Roasted Eggplant With Tahini, Pine Nuts, and Lentils">
+                    <div class="card-content">
+                        <p class="recipe-origin">United States</p>
+                        <h4 class="recipe-title">Roasted Eggplant With Tahini, Pine Nuts, and Lentils</h4>
+                    </div>
+                </a>
+            </div>
+            <div class="col">
+                <a href="#" class="recipe-card">
+                    <img src="../assets/25.jpg" alt="Shakshuka">
+                    <div class="card-content">
+                        <p class="recipe-origin">Egyptian</p>
+                        <h4 class="recipe-title">Shakshuka</h4>
+                    </div>
+                </a>
+            </div>
+            <div class="col">
+                <a href="#" class="recipe-card">
+                    <img src="../assets/26.jpg" alt="Smoky Lentil Chili with Squash">
+                    <div class="card-content">
+                        <p class="recipe-origin">British</p>
+                        <h4 class="recipe-title">Smoky Lentil Chili with Squash</h4>
+                    </div>
+                </a>
+            </div>
+            <div class="col">
+                <a href="#" class="recipe-card">
+                    <img src="../assets/27.jpg" alt="Spanish Tortilla">
+                    <div class="card-content">
+                        <p class="recipe-origin">Spanish</p>
+                        <h4 class="recipe-title">Spanish Tortilla</h4>
+                    </div>
+                </a>
+            </div>
+            <div class="col">
+                <a href="#" class="recipe-card">
+                    <img src="../assets/28.jpg" alt="Spicy Arrabiata Penne">
+                    <div class="card-content">
+                        <p class="recipe-origin">Italian</p>
+                        <h4 class="recipe-title">Spicy Arrabiata Penne</h4>
+                    </div>
+                </a>
+            </div>
+            <div class="col">
+                <a href="#" class="recipe-card">
+                    <img src="../assets/29.jpg" alt="Spicy North African Potato Salad">
+                    <div class="card-content">
+                        <p class="recipe-origin">Moroccan</p>
+                        <h4 class="recipe-title">Spicy North African Potato Salad</h4>
+                    </div>
+                </a>
+            </div>
+            <div class="col">
+                <a href="#" class="recipe-card">
+                    <img src="../assets/30.jpg" alt="Spinach & Ricotta Cannelloni">
+                    <div class="card-content">
+                        <p class="recipe-origin">Italian</p>
+                        <h4 class="recipe-title">Spinach & Ricotta Cannelloni</h4>
+                    </div>
+                </a>
+            </div>
+            <div class="col">
+                <a href="#" class="recipe-card">
+                    <img src="../assets/31.jpg" alt="Squash linguine">
+                    <div class="card-content">
+                        <p class="recipe-origin">Italian</p>
+                        <h4 class="recipe-title">Squash linguine</h4>
+                    </div>
+                </a>
+            </div>
+            <div class="col">
+                <a href="#" class="recipe-card">
+                    <img src="../assets/32.jpg" alt="Stovetop Eggplant With Harissa, Chickpeas, and Cumin Yogurt">
+                    <div class="card-content">
+                        <p class="recipe-origin">United States</p>
+                        <h4 class="recipe-title">Stovetop Eggplant With Harissa, Chickpeas, and Cumin Yogurt</h4>
+                    </div>
+                </a>
+            </div>
+            <div class="col">
+                <a href="#" class="recipe-card">
+                    <img src="../assets/33.jpg" alt="Stuffed Bell Peppers with Quinoa and Black Beans">
+                    <div class="card-content">
+                        <p class="recipe-origin">Mexican</p>
+                        <h4 class="recipe-title">Stuffed Bell Peppers with Quinoa and Black Beans</h4>
+                    </div>
+                </a>
+            </div>
+            <div class="col">
+                <a href="#" class="recipe-card">
+                    <img src="../assets/34.jpg" alt="Summer Pistou">
+                    <div class="card-content">
+                        <p class="recipe-origin">France</p>
+                        <h4 class="recipe-title">Summer Pistou</h4>
+                    </div>
+                </a>
+            </div>
+            <div class="col">
+                <a href="#" class="recipe-card">
+                    <img src="../assets/35.jpg" alt="Tahini Lentils">
+                    <div class="card-content">
+                        <p class="recipe-origin">Moroccan</p>
+                        <h4 class="recipe-title">Tahini Lentils</h4>
+                    </div>
+                </a>
+            </div>
+            <div class="col">
+                <a href="#" class="recipe-card">
+                    <img src="../assets/36.jpg" alt="Tamiya">
+                    <div class="card-content">
+                        <p class="recipe-origin">Egyptian</p>
+                        <h4 class="recipe-title">Tamiya</h4>
+                    </div>
+                </a>
+            </div>
+            <div class="col">
+                <a href="#" class="recipe-card">
+                    <img src="../assets/37.jpg" alt="Tortang Talong">
+                    <div class="card-content">
+                        <p class="recipe-origin">Filipino</p>
+                        <h4 class="recipe-title">Tortang Talong</h4>
+                    </div>
+                </a>
+            </div>
+            <div class="col">
+                <a href="#" class="recipe-card">
+                    <img src="../assets/38.jpg" alt="Vegetarian Casserole">
+                    <div class="card-content">
+                        <p class="recipe-origin">British</p>
+                        <h4 class="recipe-title">Vegetarian Casserole</h4>
+                    </div>
+                </a>
+            </div>
+            <div class="col">
+                <a href="#" class="recipe-card">
+                    <img src="../assets/39.jpg" alt="Vegetarian Chilli">
+                    <div class="card-content">
+                        <p class="recipe-origin">British</p>
+                        <h4 class="recipe-title">Vegetarian Chilli</h4>
+                    </div>
+                </a>
+            </div>
+            <div class="col">
+                <a href="#" class="recipe-card">
+                    <img src="../assets/40.jpg" alt="Yaki Udon">
+                    <div class="card-content">
+                        <p class="recipe-origin">Japanese</p>
+                        <h4 class="recipe-title">Yaki Udon</h4>
+                    </div>
+                </a>
+            </div>
+
+
+
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
