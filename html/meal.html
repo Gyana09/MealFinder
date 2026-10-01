@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meal Finder</title>
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <!-- Navbar Section -->
+    <nav class="navbar" data-bs-theme="dark">
+        <div class="container-fluid" id="navbarContainer">
+            <a class="navbar-brand text-white" href="home.html"><i class="fa-solid fa-house"></i> MEAL FINDER</a>
+            <button id="navbarToggler" class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel" style="background-color: white;">
+
+                <div class="offcanvas-header">
+                    <button type="button" class="meal-close" data-bs-dismiss="offcanvas" aria-label="Close">
+                        <i class="fa-regular fa-circle-xmark"></i>
+                    </button>
+                </div>
+
+                <div class="offcanvas-body">
+                    <ul class="category-list">
+                        <li><a href="#">Beef</a></li>
+                        <li><a href="#">Chicken</a></li>
+                        <li><a href="#">Dessert</a></li>
+                        <li><a href="#">Lamb</a></li>
+                        <li><a href="#">Miscellaneous</a></li>
+                        <li><a href="#">Pasta</a></li>
+                        <li><a href="#">Pork</a></li>
+                        <li><a href="#">Seafood</a></li>
+                        <li><a href="#">Side</a></li>
+                        <li><a href="#">Starter</a></li>
+                        <li><a href="#">Vegan</a></li>
+                        <li><a href="#">Vegetarian</a></li>
+                        <li><a href="#">Breakfast</a></li>
+                        <li><a href="#">Goat</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Banner Section -->
+    <header class="banner">
+        <form class="search-container" action="#" method="GET">
+            <input type="text" class="search-input" placeholder="Search recipes here..." aria-label="Search recipes">
+            <button type="submit" class="search-btn" aria-label="Submit search">
+                <i class="fa-solid fa-magnifying-glass" style="color: #6c757d;"></i>
+            </button>
+        </form>
+        <h2>What are your favorite cuisines?</h2>
+        <p>PERSONALIZE YOUR EXPERIENCE</p>
+    </header>
+
+    <!-- Meal Section start -->
+
+
+    <section class="meal-section" id="meal1">
+
+        <div class="meal-breadcrumb">
+            <i class="fa-solid fa-house"></i>
+            <span>››</span>
+            <span>BAINGAN BHARTA</span>
+        </div>
+
+        <div class="meal-heading">
+            <h2>MEAL DETAILS</h2>
+            <span></span>
+        </div>
+
+        <div class="meal-details-card">
+            <div class="meal-top">
+                <div class="meal-image">
+                    <img src="../assets/1.jpg" alt="Baingan Bharta">
+                </div>
+                <div class="meal-info">
+                    <h2>Baingan Bharta</h2>
+                    <div class="meal-line"></div>
+                    <p>
+                        <strong>CATEGORY:</strong>
+                        <span> VEGETARIAN</span>
+                    </p>
+                    <p>
+                        <strong>Source:</strong>
+                        <span>http://www.demolink.com/</span>
+                    </p>
+                    <div class="meal-tags">
+                        <strong>Tags:</strong>
+                        <span>Tag 1</span>
+                        <span>Tag 2</span>
+                        <span>Tag 3</span>
+                    </div>
+
+                    <div class="ingredients-box">
+                        <h4>Ingredients</h4>
+                        <div class="ingredients-list">
+                            <div>
+                                <p><b>1</b>Ingredients 1</p>
+                                <p><b>4</b>Ingredients 2</p>
+                                <p><b>7</b>Ingredients 3</p>
+                            </div>
+                            <div>
+                                <p><b>2</b>Ingredients 4</p>
+                                <p><b>5</b>Ingredients 5</p>
+                                <p><b>8</b>Ingredients 6</p>
+                            </div>
+                            <div>
+                                <p><b>3</b>Ingredients 7</p>
+                                <p><b>6</b>Ingredients 8</p>
+                                <p><b>9</b>Ingredients 9</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="measure-section">
+                <h4>Measure:</h4>
+                <div class="measure-list">
+                    <div>
+                        <p><i class="fa-solid fa-spoon"></i>1 large</p>
+                        <p><i class="fa-solid fa-spoon"></i>1 cup</p>
+                        <p><i class="fa-solid fa-spoon"></i>¼ teaspoon</p>
+                        <p><i class="fa-solid fa-spoon"></i>1 tablespoon chopped</p>
+                    </div>
+
+                    <div>
+                        <p><i class="fa-solid fa-spoon"></i>½ cup</p>
+                        <p><i class="fa-solid fa-spoon"></i>6 cloves</p>
+                        <p><i class="fa-solid fa-spoon"></i>1.5 tablespoon</p>
+                        <p><i class="fa-solid fa-spoon"></i>as required</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="instructions-section">
+                <h4>Instructions:</h4>
+                <div class="instruction-list">
+                    <p><i class="fa-regular fa-square-check"></i>Lorem ipsum dolor, sit amet consectetur adipisicing
+                        elit. Tempora ex ut dicta ratione velit, dolorum quaerat rerum commodi? Accusantium, rerum.</p>
+                    <p><i class="fa-regular fa-square-check"></i>Lorem ipsum dolor sit, amet consectetur adipisicing
+                        elit. Blanditiis, omnis ad eveniet aperiam ea obcaecati accusantium consequuntur suscipit ipsam
+                        cumque.</p>
+                    <p><i class="fa-regular fa-square-check"></i>Lorem ipsum dolor sit amet consectetur adipisicing
+                        elit. Incidunt rerum alias velit corrupti commodi, quae assumenda nobis voluptatem veritatis
+                        totam.</p>
+                    <p><i class="fa-regular fa-square-check"></i>Lorem ipsum dolor sit amet consectetur adipisicing
+                        elit. Aspernatur neque modi quidem officia. Cupiditate magnam earum inventore eos. Ab, facilis.
+                    </p>
+                    <p><i class="fa-regular fa-square-check"></i>Lorem ipsum dolor sit amet consectetur adipisicing
+                        elit. Nisi numquam exercitationem aut officia fugit iure nam omnis eius! Dignissimos, dolorum?
+                    </p>
+                    <p><i class="fa-regular fa-square-check"></i>Lorem ipsum dolor sit amet consectetur, adipisicing
+                        elit. Molestias consequuntur voluptates ipsum cum ad fuga suscipit incidunt et veritatis
+                        tempora?</p>
+                    <p><i class="fa-regular fa-square-check"></i>Lorem ipsum dolor sit amet consectetur adipisicing
+                        elit. Maiores dicta dolore animi id doloribus consequatur non harum voluptas at minima!</p>
+                    <p><i class="fa-regular fa-square-check"></i>Lorem ipsum dolor sit amet consectetur adipisicing
+                        elit. Vitae in totam alias distinctio tenetur quisquam nam eius delectus tempora velit.</p>
+                    <p><i class="fa-regular fa-square-check"></i>Lorem ipsum dolor sit amet consectetur, adipisicing
+                        elit. Rem nisi, dolorum excepturi amet laboriosam architecto magnam hic. Sequi, in! Soluta!</p>
+                    <p><i class="fa-regular fa-square-check"></i>Lorem ipsum dolor sit, amet consectetur adipisicing
+                        elit. Earum deleniti beatae assumenda recusandae quidem corrupti dicta id eligendi distinctio
+                        mollitia!</p>
+                    <p><i class="fa-regular fa-square-check"></i>Lorem ipsum dolor sit, amet consectetur adipisicing
+                        elit. Odit provident assumenda eos ipsum consequatur quaerat illo debitis adipisci sunt
+                        doloremque!</p>
+                    <p><i class="fa-regular fa-square-check"></i>Lorem ipsum dolor sit amet consectetur, adipisicing
+                        elit. Doloribus ad necessitatibus consectetur voluptatum maxime dolore recusandae! Tenetur
+                        tempora ipsa deserunt?</p>
+                    <p><i class="fa-regular fa-square-check"></i>Lorem ipsum dolor sit amet consectetur, adipisicing
+                        elit. Et ratione alias voluptatum velit. Quos error, nihil labore velit optio aliquid.</p>
+                    <p><i class="fa-regular fa-square-check"></i>Lorem ipsum dolor sit amet consectetur adipisicing
+                        elit. Accusantium sunt laboriosam praesentium eum corporis quam modi unde iste molestiae!
+                        Maxime?</p>
+                    <p><i class="fa-regular fa-square-check"></i>Lorem ipsum dolor sit amet consectetur adipisicing
+                        elit. Laudantium excepturi itaque, tempora vero amet voluptate reiciendis? Expedita dolorum
+                        accusantium repellendus.</p>
+                    <p><i class="fa-regular fa-square-check"></i>Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit. Eos qui, at tempore error unde consequatur asperiores illum rem ullam velit?</p>
+                    <p><i class="fa-regular fa-square-check"></i>Lorem ipsum dolor sit amet consectetur adipisicing
+                        elit. Reiciendis ipsam omnis maxime eveniet consequuntur est perspiciatis cumque debitis.
+                        Praesentium, nobis.</p>
+                    <p><i class="fa-regular fa-square-check"></i>Lorem ipsum dolor sit amet consectetur adipisicing
+                        elit. Similique quidem quam ex iusto accusamus autem beatae nemo magnam dolor tempore?</p>
+                    <p><i class="fa-regular fa-square-check"></i>Lorem ipsum dolor sit amet consectetur adipisicing
+                        elit. Tenetur architecto totam voluptas eos vel pariatur aut voluptatem illo hic veritatis!</p>
+                    <p><i class="fa-regular fa-square-check"></i>Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit. Quidem voluptates dicta ducimus sint ratione praesentium aspernatur cumque natus
+                        laudantium optio?</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Meal Section end -->
+
+
+    <!-- Categories Section -->
+    <section class="categories-section">
+        <h3 class="categories-title">CATEGORIES</h3>
+        <div class="title-underline"></div>
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-5 g-4">
+
+            <div class="col">
+                <a href="#" class="category-card">
+                    <span class="category-badge">BEEF</span>
+                    <img src="../assets/beef.png" alt="Beef">
+                </a>
+            </div>
+
+            <div class="col">
+                <a href="#" class="category-card">
+                    <span class="category-badge">CHICKEN</span>
+                    <img src="../assets/chicken.png" alt="Chicken">
+                </a>
+            </div>
+
+            <div class="col">
+                <a href="#" class="category-card">
+                    <span class="category-badge">DESSERT</span>
+                    <img src="../assets/dessert.png" alt="Dessert">
+                </a>
+            </div>
+
+            <div class="col">
+                <a href="#" class="category-card">
+                    <span class="category-badge">LAMB</span>
+                    <img src="../assets/lamb.png" alt="Lamb">
+                </a>
+            </div>
+
+            <div class="col">
+                <a href="#" class="category-card">
+                    <span class="category-badge">MISCELLANEOUS</span>
+                    <img src="../assets/miscellaneous.png" alt="Miscellaneous">
+                </a>
+            </div>
+
+            <div class="col">
+                <a href="#" class="category-card">
+                    <span class="category-badge">PASTA</span>
+                    <img src="../assets/pasta.png" alt="Pasta">
+                </a>
+            </div>
+
+            <div class="col">
+                <a href="#" class="category-card">
+                    <span class="category-badge">PORK</span>
+                    <img src="../assets/pork.png" alt="Pork">
+                </a>
+            </div>
+
+            <div class="col">
+                <a href="#" class="category-card">
+                    <span class="category-badge">SEAFOOD</span>
+                    <img src="../assets/seafood.png" alt="Seafood">
+                </a>
+            </div>
+
+            <div class="col">
+                <a href="#" class="category-card">
+                    <span class="category-badge">SIDE</span>
+                    <img src="../assets/side.png" alt="Side">
+                </a>
+            </div>
+
+            <div class="col">
+                <a href="#" class="category-card">
+                    <span class="category-badge">STARTER</span>
+                    <img src="../assets/starter.png" alt="Starter">
+                </a>
+            </div>
+
+            <div class="col">
+                <a href="#" class="category-card">
+                    <span class="category-badge">VEGAN</span>
+                    <img src="../assets/vegan.png" alt="Vegan">
+                </a>
+            </div>
+
+            <div class="col">
+                <a href="vegetarian.html" class="category-card">
+                    <span class="category-badge">VEGETARIAN</span>
+                    <img src="../assets/vegetarian.png" alt="Vegetarian">
+                </a>
+            </div>
+
+            <div class="col">
+                <a href="#" class="category-card">
+                    <span class="category-badge">BREAKFAST</span>
+                    <img src="../assets/breakfast.png" alt="Breakfast">
+                </a>
+            </div>
+
+            <div class="col">
+                <a href="#" class="category-card">
+                    <span class="category-badge">GOAT</span>
+                    <img src="../assets/goat.png" alt="Goat">
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
